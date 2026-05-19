@@ -190,9 +190,7 @@ Codex 理解客户、商品、数量、价格、收款方式
 ```text
 .
 ├── SKILL.md             # 主入口路由
-├── skills/              # 4 个公开 skill
-├── references/          # 运行时参考资料
-├── templates/           # 阶段化业务模板
+├── skills/              # 4 个公开 skill，每个子 skill 自带运行所需 references/templates
 ├── tools/               # 打包与本地安装脚本
 ├── tests/               # 技能评测和回归测试材料
 └── docs/                # 架构、路线图和开发背景

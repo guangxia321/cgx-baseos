@@ -82,13 +82,13 @@
 | 业务数据诊断 | `skills/cgx-baseos-diagnose/SKILL.md` | 输出一页业务数据地图 |
 | 构建/重构 | `skills/cgx-baseos-build/SKILL.md` | 承接地图，构建或重构经营数仓 |
 | 维修排障 | `skills/cgx-baseos-repair/SKILL.md` | 修已有系统问题 |
-| 数据诊断 reference | `references/business-classifier.md` | AI 数仓判断和业务数据地图格式 |
-| 构建流程 | `references/build-playbook.md` | 四阶段构建、重构、模板、飞书落地和验收 |
-| 系统设计规则 | `references/system-design-rules.md` | 基础数据、录入入口、字段分层、工作流边界 |
-| 看板构建规则 | `references/dashboard-build-rules.md` | 新建看板设计和上线验收 |
-| 经营财务 | `references/finance-scenarios.md` | 构建内部能力，不独立暴露 |
-| 飞书 CLI 准备 | `references/feishu-cli-setup.md` | 构建内部实施前置 |
-| 模板资源 | `templates/*/schema.md` | 构建内部资源 |
+| 数据诊断 reference | `skills/cgx-baseos-diagnose/references/business-classifier.md` | AI 数仓判断和业务数据地图格式 |
+| 构建流程 | `skills/cgx-baseos-build/references/build-playbook.md` | 四阶段构建、重构、模板、飞书落地和验收 |
+| 系统设计规则 | `skills/*/references/system-design-rules.md` | 基础数据、录入入口、字段分层、工作流边界 |
+| 看板构建规则 | `skills/cgx-baseos-build/references/dashboard-build-rules.md` | 新建看板设计和上线验收 |
+| 经营财务 | `skills/cgx-baseos-build/references/finance-scenarios.md` | 构建内部能力，不独立暴露 |
+| 飞书 CLI 准备 | `skills/cgx-baseos-build/references/feishu-cli-setup.md` | 构建内部实施前置 |
+| 模板资源 | `skills/cgx-baseos-build/templates/*/schema.md` | 构建内部资源 |
 | 测试用例 | `tests/` | 路由、诊断产物和验收测试 |
 
 ## 近期开发顺序

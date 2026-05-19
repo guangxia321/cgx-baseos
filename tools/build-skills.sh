@@ -13,53 +13,22 @@ fi
 rm -rf "$OUT_DIR"
 mkdir -p "$OUT_DIR/individual"
 
-copy_ref() {
-  local stage_dir="$1"
-  local rel_path="$2"
-
-  mkdir -p "$stage_dir/$(dirname "$rel_path")"
-  cp "$ROOT_DIR/$rel_path" "$stage_dir/$rel_path"
-}
-
 stage_skill() {
   local skill_dir="$1"
   local stage_dir="$2"
   local name
 
   name="$(basename "$skill_dir")"
-  mkdir -p "$stage_dir"
-  cp "$skill_dir/SKILL.md" "$stage_dir/SKILL.md"
+  cp -R "$skill_dir" "$stage_dir"
 
   case "$name" in
     cgx-baseos)
       ;;
     cgx-baseos-diagnose)
-      copy_ref "$stage_dir" references/business-classifier.md
-      copy_ref "$stage_dir" references/high-frequency-scenarios.md
-      copy_ref "$stage_dir" references/system-design-rules.md
       ;;
     cgx-baseos-build)
-      copy_ref "$stage_dir" references/business-classifier.md
-      copy_ref "$stage_dir" references/high-frequency-scenarios.md
-      copy_ref "$stage_dir" references/build-playbook.md
-      copy_ref "$stage_dir" references/system-design-rules.md
-      copy_ref "$stage_dir" references/dashboard-build-rules.md
-      copy_ref "$stage_dir" references/finance-scenarios.md
-      copy_ref "$stage_dir" references/feishu-cli-setup.md
-      copy_ref "$stage_dir" references/official-template-design-patterns.md
-      copy_ref "$stage_dir" references/official-template-execution-patterns.md
-      copy_ref "$stage_dir" references/official-template-reference-library.md
-      copy_ref "$stage_dir" templates/sales-system/schema.md
-      copy_ref "$stage_dir" templates/solo-business/schema.md
-      copy_ref "$stage_dir" templates/service-business/schema.md
-      copy_ref "$stage_dir" templates/finance-ops/schema.md
       ;;
     cgx-baseos-repair)
-      copy_ref "$stage_dir" references/repair-playbook.md
-      copy_ref "$stage_dir" references/dashboard-troubleshooting.md
-      copy_ref "$stage_dir" references/dashboard-filter-slicer-case.md
-      copy_ref "$stage_dir" references/field-modeling-antipatterns.md
-      copy_ref "$stage_dir" references/system-design-rules.md
       ;;
     *)
       echo "error: unknown public skill $name" >&2

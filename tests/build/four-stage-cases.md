@@ -51,6 +51,6 @@
 期望：
 
 - 路由到 `cgx-baseos-build`。
-- 读取 `templates/service-business/schema.md`。
+- 读取 `skills/cgx-baseos-build/templates/service-business/schema.md`。
 - 模板必须包含基础数据层、录入与联动层、展示看板层、验收发布层。
 - 必须区分用户录入字段、自动字段、显式状态字段和看板读取字段。

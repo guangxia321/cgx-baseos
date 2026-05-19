@@ -64,8 +64,8 @@ flowchart TD
 
 ## 资源边界
 
-- `references/finance-scenarios.md` 是经营财务内部能力。
-- `references/dashboard-build-rules.md` 是新建看板内部能力。
-- `templates/*/schema.md` 是构建资源，不是独立技能。
-- `references/feishu-cli-setup.md` 是飞书落地前置步骤。
-- `external-references/` 只做本地参考，不进入技能运行上下文。
+- `skills/cgx-baseos-build/references/finance-scenarios.md` 是经营财务内部能力。
+- `skills/cgx-baseos-build/references/dashboard-build-rules.md` 是新建看板内部能力。
+- `skills/cgx-baseos-build/templates/*/schema.md` 是构建资源，不是独立技能。
+- `skills/cgx-baseos-build/references/feishu-cli-setup.md` 是飞书落地前置步骤。
+- 每个公开子技能目录自带运行所需 `references/` 和 `templates/`，避免源码使用和 Release 安装时路径不一致。

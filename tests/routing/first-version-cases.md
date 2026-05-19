@@ -66,7 +66,7 @@
 
 - 归类为构建资源请求。
 - 路由到 `cgx-baseos-build`。
-- 可读取 `templates/solo-business/schema.md`。
+- 可读取 `skills/cgx-baseos-build/templates/solo-business/schema.md`。
 - 输出适用边界，并按四阶段说明基础数据、录入联动、展示看板和验收发布。
 - 不能路由到 `cgx-baseos-templates`。
 
@@ -81,7 +81,7 @@
 - 归类为构建中的经营财务场景。
 - 路由到 `cgx-baseos-build`。
 - 读取 `finance-scenarios.md`。
-- 可读取 `templates/finance-ops/schema.md`。
+- 可读取 `skills/cgx-baseos-build/templates/finance-ops/schema.md`。
 - 明确不替代专业会计、报税、总账。
 - 不能路由到 `cgx-baseos-finance`。
 
@@ -109,7 +109,7 @@
 
 - 如果用户还没明确关键数据和录入方式，先路由到 `cgx-baseos-diagnose`。
 - 一页业务数据地图应识别线索 -> 商机 -> 合同 -> 项目交付 -> 收款 -> 续费。
-- 构建阶段可读取 `templates/service-business/schema.md`。
+- 构建阶段可读取 `skills/cgx-baseos-build/templates/service-business/schema.md`。
 - 不只做销售 CRM，也不能忽略交付和回款。
 
 ## 用例 9：项目利润
