@@ -1,0 +1,4 @@
+interface:
+  display_name: "广厦 BaseOS"
+  short_description: "诊断企业关键数据，构建或维修 AI 可用经营数仓"
+  default_prompt: "Use $CGX BaseOS to diagnose the business data map first, then build, reconstruct, or repair a low-maintenance AI-ready operating data warehouse on Feishu Base or similar tools."
