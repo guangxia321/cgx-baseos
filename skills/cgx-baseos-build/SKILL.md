@@ -49,7 +49,7 @@ description: |
 - 用户只要字段清单、Excel 模板或飞书表结构：读对应 `templates/*/schema.md`，但不要切到独立模板技能。
 - 用户提到官方模板、行业模板、成熟案例、相同/差异点：读 `references/official-template-design-patterns.md` 和 `references/official-template-reference-library.md`。
 - 用户问公式、数据流转、状态处理、工作流边界、看板设计：读 `references/official-template-execution-patterns.md`。
-- 方案确认且要落到飞书 Base：读 `references/feishu-cli-setup.md`，再使用 `lark-base` skill。
+- 方案确认且要落到飞书 Base：读 `references/feishu-cli-setup.md`，先完成 CLI、授权、目标 Base 和权限验证，再使用 `lark-base` skill。
 - 已有系统出错、看板坏了、字段/公式/工作流异常：切到 `$cgx-baseos-repair`。
 
 ## 执行规则
@@ -59,7 +59,7 @@ description: |
 - 必须设计日常录入视图、批量录入视图、Agent 入口和导入校验视图。
 - 用户和 Agent 要共用同一套数据入口。
 - 财务结构只做经营可见性，不替代专业会计、报税、总账或复式记账。
-- 飞书落地前必须确认 CLI、授权、目标 Base 和修改权限。
+- 用户要求落到飞书 Base 时，CLI、授权、目标 Base 和修改权限是硬前置；未通过前只能给方案、模板或本地验算结果，不能改用本地 Excel 作为默认交付。
 - 默认不做复杂权限、复杂审批、完整库存、完整 ERP、人事、绩效。
 
 ## 输出

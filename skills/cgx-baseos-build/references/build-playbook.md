@@ -22,7 +22,7 @@
 4. 如果用户提到官方模板、行业模板、成熟案例、相同/差异点或系统结构参考，读取 `official-template-design-patterns.md`。
 5. 如果用户提到公式、数据流转、状态处理、工作流边界、看板设计或执行层经验，读取 `official-template-execution-patterns.md`。
 6. 如果涉及收款、支出、利润、现金流或凭证，读取 `finance-scenarios.md`。
-7. 如果要真正落到飞书 Base，读取 `feishu-cli-setup.md`，先完成 CLI 安装、配置、授权和验证。
+7. 如果要真正落到飞书 Base，读取 `feishu-cli-setup.md`，先完成 CLI 安装、配置、授权、目标 Base 和权限验证。
 
 ## 四阶段构建协议
 
@@ -121,6 +121,8 @@
 
 ## 是否先本地验算
 
+飞书 Base 是默认落地载体。本地 Excel / 表格只能作为校验、预演和调整工具，不能替代飞书多维表格的长期系统能力。
+
 直接进飞书 Base 的场景：
 
 - 简单客户、订单、收款登记。
@@ -134,13 +136,15 @@
 - 用户给出的口径存在冲突。
 - 关键指标错了会影响对账、收款或经营决策。
 
-本地 Excel / 表格只是验证工具，不是日常系统。最终入口仍应回到用户和 Agent 都能共用的飞书 Base 或类似 SaaS。
+本地 Excel / 表格只是验证工具，不是日常系统。它可以用于复杂口径验算、历史数据清洗预演、导入字段顺序设计和样例数据核对；验算完成后，最终入口仍应回到用户和 Agent 都能共用的飞书 Base 或类似 SaaS。
 
 ## 飞书实施规则
 
 飞书 CLI 准备不单独作为技能暴露，它是构建流程的实施前置步骤。
 
-涉及飞书 Base 操作前，必须先确认 `lark-cli --version`、`lark-cli doctor` 和 `lark-cli auth status` 可用。没有可用 CLI 时，只能输出方案或模板，不能承诺已经搭建。
+只要用户目标是搭到飞书 Base，飞书 CLI 就是硬前置，不是可选项。
+
+涉及飞书 Base 操作前，必须先确认 `lark-cli --version`、`lark-cli doctor` 和 `lark-cli auth status` 可用，并确认目标 Base 和当前身份具备修改权限。没有可用 CLI 时，只能输出方案、模板或本地验算结果，不能承诺已经搭建，也不能把本地 Excel 当成默认交付物。
 
 涉及飞书 Base 操作时必须使用 `lark-base` skill，并按其要求读取对应 reference。创建公式字段前读 formula guide。创建 lookup 字段前读 lookup guide。不要猜字段 ID、表名、字段类型和公式语法。
 
